@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>NIKITAN's</title>
+    <title>NIKITAN</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -28,6 +27,73 @@
         .AryaNikki{
             text-align: center;
         }
+        
+        
+        .slider-container-arya {
+            width: 800px;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider-nikku {
+            width: 100%;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide-arya {
+            width: 800px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .slide-arya img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .slide-content-nikku {
+            padding: 20px;
+            background-color: rgba(237, 232, 235, 0.5);
+            border-radius: 10px;
+        }
+
+        .slide-arya h2 {
+            margin-bottom: 10px;
+        }
+
+        .slider-controls button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #prev-btn {
+            left: 10px;
+        }
+
+        #next-btn {
+            right: 10px;
+        }
     </style>
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -39,7 +105,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img2/carasol1.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img2/carasol1.jpg" style="object-fit: cover; ">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <!-- <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Jack & Rose</h1>
@@ -260,7 +326,7 @@
                 <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
                     <h4 class="mb-2">Phoenix Mall</h4>
                     <!-- <p class="text-uppercase mb-2">Apr-May 2024</p> -->
-                    <img class="img-fluid ml-md-3" width=100% height = "500" src="img2/Pheonix_Mall.png" alt="">
+                    <img class="img-fluid ml-md-3" width=100% height = "500" src="img2/Pheonix_Mall---.png" alt="">
                 </div>
             </div>
             <div class="col-md-6 text-center text-md-left">
@@ -268,12 +334,151 @@
             </div>
         </div>
     </div>
+    <div class="container timeline position-relative p-0">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-right">
+                <!-- <img class="img-fluid mr-md-3" src="img2/First_Meet.jpg" alt=""> -->
+                <iframe width=100% height = "800" src="Photos-001/IMG20250105211251.jpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 text-center text-md-left">
+                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                    <h4 class="mb-2">Chhatrapati Sambhaji Maharaj Garden</h4>
+                    <p class="text-uppercase mb-2">11 Oct 2024</p>
+                    <img class="img-fluid mr-md-3" src="img2/AryaNikku.jpg" alt="">
+                    <hr>
+                    <!-- <img class="img-fluid mr-md-3" src="img2/First_Meet_Dineer.jpg" alt=""> -->
+                </div>
+            </div>
+        </div>
+</div>
     </div>
         <div class="AryaNikki">
             <img class="img-fluid ml-md-3" src="img2/GALLERY3_cropped.jpg" alt="" height="500px" width="500px">
         </div>
     </div>
     <!-- Story End -->
+
+
+<!-- Shayari Slider Start -->
+
+
+    <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+                <h1 class="font-secondary display-4" style="color: black;">Shayari</h1>
+            </div>
+            <div class="slider-container-arya" id="slider-container">
+                <div class="slider-nikku" id="slider">
+                    <div class="slide-arya">
+                        <img src="annie-spratt-5vxfg8YvN80-unsplash.jpg" alt="Image 1">
+                        <div class="slide-content-nikku">
+                            <h2><pre>Naa aapna mahnti hai
+Naa chod deti hai
+Vo Hamare rishte ko
+you are my very Good Friend
+bol deti hai</pre></h2>
+                        </div>
+                    </div>
+                    <div class="slide-arya">
+                        <img src="romantic-flowers-with-blank-paper.jpg" alt="Image 2">
+                        <div class="slide-content-nikku">
+                            <h2><pre>Agar baat hai unki toh
+yaad toh roj ati hai
+Lekin naa baat hoti hai
+Naa mulakat hota hai</pre></h2>
+                        </div>
+                    </div>
+                    <div class="slide-arya">
+                        <img src="top-view-red-color-rose-with-sketchbook-cup-coffee-white-background.jpg" alt="Image 3">
+                        <div class="slide-content-nikku">
+                            <h2><pre>Your love is blessing to be Found
+but trying to Receive it
+Is just like a Battle 
+between 
+Dil ❤️ and Dimaag 🧠</pre></h2>
+                        </div>
+                    </div>
+                    <div class="slide-arya">
+                        <img src="annie-spratt-UXGLzFD-jVs-unsplash.jpg" alt="Image 10">
+                        <div class="slide-content-nikku">
+                            <h2>Slide 4 Title</h2>
+                            <p>Content for slide 10.</p>
+                        </div>
+                    </div>
+                    <div class="slide-arya">
+                        <img src="kilimanjaro-studioz-1tgSROQC9hM-unsplash.jpg" alt="Image 1">
+                        <div class="slide-content-nikku">
+                            <h2><pre>Ghar par hokar bhi
+mera mann nahin lag raha
+Kaam karne ka sochu toh bhi
+kaam puri nahin kar pa raha
+Raat 2 bajneko hai lekin fir bhi
+mujhe nind nahi aa rah
+Yaar ye kehsi mohabbat hai meri
+jo na mukammal ho rahi hai
+na dard seh pa raha</pre></h2>
+                        </div>
+                    </div>
+                    <div class="slide-arya">
+                        <img src="annie-spratt-BrfCiLC7Grc-unsplash.jpg" alt="Image 10">
+                        <div class="slide-content-nikku">
+                            <h2><pre>Mujhe tujhse dosti nahi sirf tera pyaar chahiye
+Unhe hamari pyaar sirf dosti meh chahiye
+Har samay hamm dosti se khush hojate hain
+Lekin vo fir dosti ki haad par kadeti hain
+Unke liye vo maza hain lekin
+Hamare liye vo sajha</pre></h2>
+                        </div>
+                    </div>
+                    <div class="slide-arya">
+                        <img src="top-view-sketchbook-paper-clips-with-palm-leaf-rose-flower-petals-scattered-white-background.jpg" alt="Image 1">
+                        <div class="slide-content-nikku">
+                            <h2>Slide 7 Title</h2>
+                            <p>Content for slide 1.</p>
+                        </div>
+                    </div>
+                    <div class="slide-arya">
+                        <img src="white-red-hearts.jpg" alt="Image 10">
+                        <div class="slide-content-nikku">
+                            <h2>Slide 8 Title</h2>
+                            <p>Content for slide 10.</p>
+                        </div>
+                    </div>
+                    <div class="slide-arya">
+                        <img src="stefan-spassov-hkN2Zde2ga4-unsplash.jpg" alt="Image 1">
+                        <div class="slide-content-nikku">
+                            <h2>Slide 9 Title</h2>
+                            <p>Content for slide 1.</p>
+                        </div>
+                    </div>
+                    <div class="slide-arya">
+                        <img src="rafael-garcin-ng1QqnTHpHw-unsplash.jpg" alt="Image 10">
+                        <div class="slide-content-nikku">
+                            <h2>Slide 10 Title</h2>
+                            <p>Content for slide 10.</p>
+                        </div>
+                    </div>
+                    <div class="slide-arya">
+                        <img src="romantic-flowers-with-blank-paper.jpg" alt="Image 10">
+                        <div class="slide-content-nikku">
+                            <h2>Slide 11 Title</h2>
+                            <p>Content for slide 10.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button id="prev-btn">&lt;</button>
+                    <button id="next-btn">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Shayari Slider End -->
+
 
 
     <!-- Gallery Start -->
@@ -308,7 +513,7 @@
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                   <div class="portfolio-wrap">
-                    <img src="img2/IMG_20240618_004721.jpg" class="img-fluid" alt="">
+                    <img src="img2/Imhgfd.jpg" class="img-fluid" alt="">
                   </div>
                 </div>
       
@@ -320,7 +525,7 @@
       
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                   <div class="portfolio-wrap">
-                    <img src="img2/IMG20240516211254.jpg" class="img-fluid" alt="">
+                    <img src="Photos-001/IMG20250105205637-COLLAGE.jpg" class="img-fluid" alt="">
                   </div>
                 </div>
       
@@ -341,6 +546,25 @@
                     <img src="img2/IMG-20231224-WA0017.jpg" class="img-fluid" alt="">
                   </div>
                 </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                      <img src="img2/IMG_20240618_004721.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                      <img src="img2/IMG20240516211254.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                      <img src="Photos-001/IMG-20250101-WA0004.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
               </div>
             </div>
           </section>
@@ -379,7 +603,29 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+     <script>
+    const slider = document.getElementById('slider');
+        const slides = document.querySelectorAll('.slide-arya');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        let currentSlide = 0;
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentSlide * 800}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlider();
+        });
+        </script>
+    <script src="js/main.js">
+    </script>
 </body>
 
 </html>
